@@ -5,12 +5,12 @@
 class NtfyCli < Formula
   desc "TUI client for monitoring ntfy.sh topics"
   homepage "https://gitlab.com/devnw/codepros/oss/ntfy-cli"
-  version "0.5.7"
+  version "1.0.0"
   license "MIT"
   depends_on :macos
 
-  url "https://gitlab.com/devnw/codepros/oss/ntfy-cli/-/jobs/artifacts/v0.5.7/raw/dist/ntfy-cli_0.5.7_darwin_universal.tar.gz?job=goreleaser-release", using: CurlDownloadStrategy
-  sha256 "bbac0e39125f3aa1e7c1ebc97e373183ac85e32a59cd14ff4035e5703735cb40"
+  url "https://gitlab.com/devnw/codepros/oss/ntfy-cli/-/jobs/artifacts/v1.0.0/raw/dist/ntfy-cli_1.0.0_darwin_universal.tar.gz?job=goreleaser-release", using: CurlDownloadStrategy
+  sha256 "0b9ea06c99106f184d6cac41ccb20688fdb9ab157f306e69970ea7a5dcd0e37c"
 
   define_method(:install) do
     bin.install "ntfy-cli"

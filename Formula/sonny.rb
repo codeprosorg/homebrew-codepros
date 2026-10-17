@@ -7,28 +7,28 @@
 class Sonny < Formula
   desc "AI coding agent for the terminal"
   homepage "https://codepros.org/"
-  version "0.11.31"
+  version "0.12.2"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://downloads.codepros.org/sonny/0.11.31/sonny_0.11.31_darwin_arm64.tar.gz"
-      sha256 "0a9e46ae9cfb241c4a40f604424b95ef06f28617d760e1797aea979b1e7b756f"
+      url "https://downloads.codepros.org/sonny/0.12.2/sonny_0.12.2_darwin_arm64.tar.gz"
+      sha256 "eb858d079decbc13d05074bbb785077e59d3c25c10e3ee5d06eb6dd59fddc9d3"
     end
     on_intel do
-      url "https://downloads.codepros.org/sonny/0.11.31/sonny_0.11.31_darwin_amd64.tar.gz"
-      sha256 "ea7034223b65130fa8e3d81bc14dbc286420e3073a49b3573cec146142e55b1b"
+      url "https://downloads.codepros.org/sonny/0.12.2/sonny_0.12.2_darwin_amd64.tar.gz"
+      sha256 "413daf9bd7287e8a8c37664883fa956aa09e10e485080b4d89f15d41212eacb4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://downloads.codepros.org/sonny/0.11.31/sonny_0.11.31_linux_arm64.tar.gz"
-      sha256 "39e38b2748ab379756b76cd483d1a4c1ffec1f14900415494d85d81f362e6abb"
+      url "https://downloads.codepros.org/sonny/0.12.2/sonny_0.12.2_linux_arm64.tar.gz"
+      sha256 "06b06849eb077bcdfc384a842efb34129ebd759a6429b5d56cf07bf39413758f"
     end
     on_intel do
-      url "https://downloads.codepros.org/sonny/0.11.31/sonny_0.11.31_linux_amd64.tar.gz"
-      sha256 "a4569263a705372f0cdddc7dab4333b02097f226a4ed137c5aa62317944cf313"
+      url "https://downloads.codepros.org/sonny/0.12.2/sonny_0.12.2_linux_amd64.tar.gz"
+      sha256 "d62d3213c4652ebc5300e43c9c057b8f16ce987729a2c6d849bed0beb45444c8"
     end
   end
 

@@ -5,10 +5,10 @@
 # (gitlab.com/devnw/ci-catalog). DO NOT EDIT: every release overwrites it.
 
 cask "sonny-desktop" do
-  version "0.11.31"
-  sha256 "3f1124e46022140aca197073237cacc184d4aad2e6a2a943121e8e9db7b4b5e8"
+  version "0.12.2"
+  sha256 "d95828dfeb58dba8bd6283ad9ffe4eb921fa0ffebceb365964746788ac6d593f"
 
-  url "https://downloads.codepros.org/sonny/0.11.31/sonny-desktop_0.11.31_darwin_universal.zip"
+  url "https://downloads.codepros.org/sonny/0.12.2/sonny-desktop_0.12.2_darwin_universal.dmg"
   name "Sonny"
   desc "Desktop app for the Sonny AI coding agent"
   homepage "https://codepros.org/"
@@ -18,12 +18,6 @@ cask "sonny-desktop" do
   app "Sonny.app"
 
   caveats <<~EOS
-    Sonny.app is not yet signed with an Apple Developer ID, so Gatekeeper
-    blocks the first launch. Clear the quarantine flag once after installing:
-
-      xattr -dr com.apple.quarantine /Applications/Sonny.app
-
-    The app bundles its own sonny CLI; `brew install codeprosorg/codepros/sonny`
-    puts the CLI on your PATH.
+    The app bundles its own sonny CLI for the local daemon; `brew install codeprosorg/codepros/sonny` additionally puts the CLI on your PATH. Uninstalling the cask keeps user data under `~/Library/Application Support/sonny`; remove that directory only when you intentionally want to delete journals, sessions and configuration.
   EOS
 end

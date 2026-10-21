@@ -5,30 +5,30 @@
 # (gitlab.com/devnw/ci-catalog). DO NOT EDIT: every release overwrites it.
 
 class Sonny < Formula
-  desc "AI coding agent for the terminal"
+  desc "Interactive CLI and API server for testing prompt packs with LLM providers"
   homepage "https://codepros.org/"
-  version "0.12.3"
+  version "0.12.5"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://downloads.codepros.org/sonny/0.12.3/sonny_0.12.3_darwin_arm64.tar.gz"
-      sha256 "b65951047d85ff51226e4472a4f943448ede4ea0bae04bf515245be00e44ace6"
+      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_darwin_arm64.tar.gz"
+      sha256 "097fbac6d7d80bb5764f4b812b3b3a746b3765bb391ad33659f1ca1d21fd81f9"
     end
     on_intel do
-      url "https://downloads.codepros.org/sonny/0.12.3/sonny_0.12.3_darwin_amd64.tar.gz"
-      sha256 "120eb1dd3208df3f35c25b3476773dedce01fec97f2a9ea7e2a9e31d0f22e94a"
+      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_darwin_amd64.tar.gz"
+      sha256 "6c83fc94d083b4907d882a43ce13968c00f2dabc3dd0b075ed725854014dd61e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://downloads.codepros.org/sonny/0.12.3/sonny_0.12.3_linux_arm64.tar.gz"
-      sha256 "e1998e07d5013620b28b3804db2d1c4eda0a24ce841b0b9605c66a06b6723bbc"
+      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_linux_arm64.tar.gz"
+      sha256 "fbfc815c755e842e63004e2eab44a2c0c546a562b8a8b187b9453dc597b525e5"
     end
     on_intel do
-      url "https://downloads.codepros.org/sonny/0.12.3/sonny_0.12.3_linux_amd64.tar.gz"
-      sha256 "2ba1302030ee2befa1abcb03b45dcca5dc0d84b1947003966337cbbe19a60695"
+      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_linux_amd64.tar.gz"
+      sha256 "98fc0be48ee74fc412f11897f8f3968f8125f3846a349ab7a1eec0f44fd73183"
     end
   end
 

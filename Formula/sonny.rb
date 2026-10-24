@@ -7,28 +7,28 @@
 class Sonny < Formula
   desc "Interactive CLI and API server for testing prompt packs with LLM providers"
   homepage "https://codepros.org/"
-  version "0.12.5"
+  version "0.12.7"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_darwin_arm64.tar.gz"
-      sha256 "097fbac6d7d80bb5764f4b812b3b3a746b3765bb391ad33659f1ca1d21fd81f9"
+      url "https://downloads.codepros.org/sonny/0.12.7/sonny_0.12.7_darwin_arm64.tar.gz"
+      sha256 "78b7d8ee9acdbe8ea276090184245278c467ed1abad63aca220c66fef98c1e22"
     end
     on_intel do
-      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_darwin_amd64.tar.gz"
-      sha256 "6c83fc94d083b4907d882a43ce13968c00f2dabc3dd0b075ed725854014dd61e"
+      url "https://downloads.codepros.org/sonny/0.12.7/sonny_0.12.7_darwin_amd64.tar.gz"
+      sha256 "c164d181db78e0acd395efb1688d121636a17bbd1da6b5f53c6535e636cec4f4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_linux_arm64.tar.gz"
-      sha256 "fbfc815c755e842e63004e2eab44a2c0c546a562b8a8b187b9453dc597b525e5"
+      url "https://downloads.codepros.org/sonny/0.12.7/sonny_0.12.7_linux_arm64.tar.gz"
+      sha256 "cc839a0170d35494430f3c267b3ff0cb50026adc7122df6d6e7ef2561c7c1b50"
     end
     on_intel do
-      url "https://downloads.codepros.org/sonny/0.12.5/sonny_0.12.5_linux_amd64.tar.gz"
-      sha256 "98fc0be48ee74fc412f11897f8f3968f8125f3846a349ab7a1eec0f44fd73183"
+      url "https://downloads.codepros.org/sonny/0.12.7/sonny_0.12.7_linux_amd64.tar.gz"
+      sha256 "b7d1c34ee7971b221496979e2e6aa39b864acd00d990b9e5c5e0087d04ae7fc7"
     end
   end
 

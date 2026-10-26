@@ -5,19 +5,20 @@
 # (gitlab.com/devnw/ci-catalog). DO NOT EDIT: every release overwrites it.
 
 cask "sonny-desktop" do
-  version "0.12.8"
-  sha256 "45cc6f47117bbecd4649e0486e92b620ad5cc7b0c9d71c729c6ecb6e0f5b4753"
+  version "0.12.9"
+  sha256 "fbb7727b78eaea013c0fd0fe569b99a7ba15470e66a111b00a07dae9beb73b37"
 
-  url "https://downloads.codepros.org/sonny/0.12.8/sonny-desktop_0.12.8_darwin_universal.dmg"
+  url "https://downloads.codepros.org/sonny/0.12.9/sonny-desktop_0.12.9_darwin_universal.dmg"
   name "Sonny"
   desc "Desktop app for the Sonny AI coding agent"
   homepage "https://codepros.org/"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
+  depends_on formula: "codeprosorg/codepros/sonny"
 
   app "Sonny.app"
 
   caveats <<~EOS
-    The app bundles its own sonny CLI for the local daemon; `brew install codeprosorg/codepros/sonny` additionally puts the CLI on your PATH. Uninstalling the cask keeps user data under `~/Library/Application Support/sonny`; remove that directory only when you intentionally want to delete journals, sessions and configuration.
+    The app bundles its own sonny CLI (and the sonnyd daemon entry point) for the local daemon, and the cask installs the codeprosorg/codepros/sonny formula so sonny and sonnyd are also on your PATH. Uninstalling the cask keeps user data under `~/Library/Application Support/sonny`; remove that directory only when you intentionally want to delete journals, sessions and configuration.
   EOS
 end

@@ -5,10 +5,10 @@
 # (gitlab.com/devnw/ci-catalog). DO NOT EDIT: every release overwrites it.
 
 cask "sonny-desktop" do
-  version "0.12.16"
-  sha256 "d301510d85d48a93151dcbdc3f644a63e67c327d6add4753000f4586de3eecc3"
+  version "0.12.17"
+  sha256 "8253a9a6012033f4bb06ec6dd7f2ebedc2444fa2fa71a93220d57537549c9961"
 
-  url "https://downloads.codepros.org/sonny/0.12.16/sonny-desktop_0.12.16_darwin_universal.dmg"
+  url "https://downloads.codepros.org/sonny/0.12.17/sonny-desktop_0.12.17_darwin_universal.dmg"
   name "Sonny"
   desc "Desktop app for the Sonny AI coding agent"
   homepage "https://codepros.org/"
